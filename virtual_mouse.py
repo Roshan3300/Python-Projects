@@ -11,7 +11,7 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.5  # Lower tracking confidence
 )
 
-# Initialize Video Capture
+# Initialize Video Capture 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)  # Lower resolution for faster processing
 cap.set(4, 480)
