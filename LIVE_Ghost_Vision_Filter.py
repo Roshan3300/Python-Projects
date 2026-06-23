@@ -6,7 +6,7 @@ cam=cv2.VideoCapture(0)
 while True:
     ret, frame=cam.read()
     grey=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    blur=cv2.bitwise_not(grey)
+    blur=cv2.bitwise_not(grey) 
     blur=cv2.GaussianBlur(blur,(21,21),0)
     ghost=cv2.divide(grey, 255-blur, scale=256)
     
